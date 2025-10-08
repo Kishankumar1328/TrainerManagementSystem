@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registeration Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/view/confirm}" method="post" th:object="${trainer}">
+    Trainer id: <input th:field="*{id}" type="number" placeholder="Enter Trainer id" /><br>
+    Trainer Name : <input th:field="*{name}" type="text" placeholder="Enter Trainer name" /><br>
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
